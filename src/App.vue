@@ -1,28 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- 使用自定义组件 -->
+    <mytest></mytest>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//引入自定义组件
+import MyTest from './components/MyTest'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  components:{//局部注册自定义组件
+    'mytest':MyTest
   }
 }
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
