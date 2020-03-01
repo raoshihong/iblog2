@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <!-- 使用自定义组件 -->
-    <mytest></mytest>
+    <!-- 在vue模型中使用组件 -->
+    <mytablelist></mytablelist>
   </div>
 </template>
 
 <script>
-//引入自定义组件
-import MyTest from './components/MyTest'
+
+//引入单文件组件
+import MyTableList from './components/MyTableList'
 
 export default {
-  components:{//局部注册自定义组件
-    'mytest':MyTest
+  components:{//注册组件
+    'mytablelist':MyTableList
   }
 }
 
